@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-6.1.1-web\css\all.css">
+	<link rel='shortcut icon' href='images/logo2.png'>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Clowns</title>
+</head>
+<body>
+	<div class="navigation">
+		<div class="container">
+      <div class="navbar">
+        <div class="logo-toggle-container">
+          <a href="HomePage.html">
+            <img src="images/Logo2.png" alt="" />
+          </a>
+          <span class="toggle-box">
+	          <span></span>
+	          <span></span>
+	          <span></span>
+           </span>
+        </div>
+        <ul class="menu">
+          <li><a href="HomePage.html">TRANG CHỦ</a></li>
+          <li><a href="ProductPage.html">SẢN PHẨM</a></li>
+          <li><a href="AboutUsPage.html">GIỚI THIỆU</a></li>
+          <li><a href="ContactPage.html">LIÊN HỆ</a></li>
+        </ul>
+      </div>
+    </div>
+ 	</div>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script type="text/javascript" src="js/code.js"></script>
+
+	<div class="contactUs">
+		<div class="contactTitle">
+			<h2><span class="dot" style="background-color: #0a9258;"></span>Liên hệ<span class="dot" style="background-color: #0a9258;"></span></h2>
+		</div>
+		<div class="contactContent">
+			<div class="contact form">
+				<h3>Liên hệ</h3>
+				<form id="form" action="#">
+					<div class="formBox">
+						<div class="formRow">
+							<div class="inputBox">
+								<span>Họ</span>
+								<input type="text" id="ho" name="ho" placeholder="Nguyễn" onkeyup="validationHo()">
+								<span id="herror"></span>
+							</div>
+							<div class="inputBox">
+								<span>Tên</span>
+								<input type="text" placeholder="Thịnh" id="ten" onkeyup="validationTen()">
+								<span id="terror"></span>
+							</div>
+						</div>
+						<div class="formRow">
+							<div class="inputBox">
+								<span>Email</span>
+								<input type="text" placeholder="thinhnd.21da@vku.udn.vn" id="email" onkeyup="validationEmail()">
+								<span id="eerror"></span>
+							</div>
+							<div class="inputBox">
+								<span>Số điện thoại</span>
+								<input type="number" placeholder="079 948 7729" id="sdt" onkeyup="validationSDT()">
+								<span id="serror"></span>
+							</div>
+						</div>
+						<div class="formRow2">
+							<div class="inputBox">
+								<span>Lời nhắn</span>
+								<textarea placeholder="Viết lời nhắn của bạn" id="loinhan" onkeyup="validationLN()"></textarea>
+								<span id="lnerror"></span>
+							</div>
+						</div>
+						<div class="formRow2">
+							<div class="inputBox">
+								<input type="submit" value="Gửi" onclick="return validationForm()">
+								<span id="smerror"></span>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="contact info">
+				<h3>Thông tin liên lạc</h3>
+				<div class="infoBox">
+					<div>
+						<span><i class="fa-solid fa-location-dot"></i></span>
+						<p>K560/16 Trần Cao Vân, Xuân Hà<br>Thanh Khê, Đà Nẵng</p>
+					</div>
+					<div>
+						<span><i class="fa-solid fa-phone"></i></span>
+						<p>0799487729</p>
+					</div>
+					<div>
+						<span><i class="fa-solid fa-envelope"></i></span>
+						<p>thinhnd.21da@vku.udn.vn</p>
+					</div>
+
+					<ul class="snetwork2">
+						<li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+						<li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+						<li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="contact map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d239.61744326288408!2d108.19355904126999!3d16.07176280236572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x314218542c32c709%3A0xe3f40b2a65c075e5!2zSzU2MCBUcuG6p24gQ2FvIFbDom4sIFh1w6JuIEjDoCwgVGhhbmggS2jDqiwgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaeG7h3QgTmFt!3m2!1d16.071599!2d108.1936334!5e0!3m2!1svi!2s!4v1652498945489!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="finner">
+			<div class="part gt">
+				<h2>Clowns</h2>
+				<p>Được ra đời với thông điệp mang đam mê của chúng tôi gửi gắm đến bạn qua những ly trà sữa ngon mỗi ngày. Sự ra đời của mỗi ly trà sữa đều được chọn lọc kỹ lưỡng từ khâu nguyên liệu, chế biến để khi đến tay của các bạn, chúng đều trở thành sản phẩm hoàn hảo nhất.</p>
+				<ul class="snetwork">
+					<li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+					<li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+					<li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a></li>
+				</ul>
+			</div>
+			<div class="part tt">
+				<h2>Thông tin</h2>
+				<ul>
+					<li><a href="AboutUsPage.html">Giới thiệu</a></li>
+					<li><a href="ProductPage.html">Sản phẩm</a></li>
+					<li><a href="ContactPage.html">Liên hệ</a></li>
+				</ul>
+			</div>
+			<div class="part lh">
+				<h2>Liên hệ</h2>
+				<ul class="lhinfo">
+					<li>
+						<span><i class="fa-solid fa-location-dot"></i></span>
+						<span>K560/16 Trần Cao Vân, Xuân Hà<br>Thanh Khê, Đà Nẵng</span>
+					</li>
+					<li>
+						<span><i class="fa-solid fa-phone"></i></span>
+						<p>0799487729</p>
+					</li>
+					<li>
+						<span><i class="fa-solid fa-envelope"></i></span>
+						<p>thinhnd.21da@vku.udn.vn</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+	<div class="madeby">
+		<p>&#9400; Copyright by CLOWNS</p>
+	</div>
+
+	<script type="text/javascript">
+		function validationHo(){
+			var ho = document.getElementById('ho').value;
+			var herror = document.getElementById('herror');
+			if(ho.length == 0){
+				herror.innerHTML = "Không được bỏ trống";
+				herror.style.color = "#ff0000";
+				return false;
+			}
+			herror.innerHTML = "";
+			return true;
+		}
+		function validationTen(){
+			var ten = document.getElementById('ten').value;
+			var terror = document.getElementById('terror');
+			if(ten.length == 0){
+				terror.innerHTML = "Không được bỏ trống";
+				terror.style.color = "#ff0000";
+				return false;
+			}
+			terror.innerHTML = "";
+			return true;
+		}
+
+		function validationEmail(){
+			var email = document.getElementById('email').value;
+			var eerror = document.getElementById('eerror');
+			var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+			if(email.match(pattern)){
+				eerror.innerHTML = "Email hợp lệ";
+				eerror.style.color = "#00ff00";
+				return true;
+			}else{
+				eerror.innerHTML = "Email không hợp lệ";
+				eerror.style.color = "#ff0000";
+				return false;
+			}
+			if(email == ""){
+				eerror.innerHTML = "Không được bỏ trống";
+				eerror.style.color = "#00ff00";
+				return false;
+			}
+		}
+
+		function validationSDT(){
+			var sdt = document.getElementById('sdt').value;
+			var serror = document.getElementById('serror');
+			if(sdt.length == 0){
+				serror.innerHTML = "Không được bỏ trống";
+				serror.style.color = "#ff0000";
+				return false;
+			}
+			if(sdt.length !== 10){
+				serror.innerHTML = "Số điện thoại phải có 10 số";
+				serror.style.color = "#ff0000";
+				return false;
+			}
+			serror.innerHTML = "";
+			return true;
+		}
+
+		function validationLN() {
+			var loinhan = document.getElementById('loinhan').value;
+			var lnerror = document.getElementById('lnerror');
+
+			if(loinhan.length == 0){
+				lnerror.innerHTML = "Không được bỏ trống";
+				lnerror.style.color = "#ff0000";
+				return false;
+			}
+			lnerror.innerHTML = "";
+			return true;
+		}
+
+		function validationForm(){
+			var smerror = document.getElementById('smerror');
+			if(!validationHo() || !validationTen() || !validationEmail() || !validationSDT() || !validationLN()){
+				smerror.style.display = 'block';
+				smerror.style.color = "#ff0000";
+				smerror.innerHTML = "Vui lòng điền đầy đủ thông tin trước khi gửi!";
+				setTimeout(function(){smerror.style.display = 'none'}, 3000);
+				return false;
+			}
+		}
+
+	</script>
+</body>
+</html>
